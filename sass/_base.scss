@@ -1,0 +1,52 @@
+/* BASE.SCSS */
+
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab);
+
+body, .pure-g [class *= "pure-u"], .pure-g-r [class *= "pure-u"] {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+body {
+  font-size: 18px;
+}
+h1 {
+  font-size: 4em;
+  font-weight: 400;
+}
+h2 {
+  font-size: 2em;
+  font-weight: 400;
+}
+h3 {
+  font-size: 1.3em;
+  font-weight: 400;
+}
+h4 {
+  font-weight: 400;
+}
+h5 {
+  font-weight: 400;
+}
+h6 {
+  font-weight: 400;
+}
+p {
+  font-size: 1em;
+  font-weight: 300;
+  line-height: 1.4em;
+}
+li {
+  font-weight: 300;
+}
+strong {
+  font-weight: 400;
+}
+a {
+  color: #c40022;
+  text-decoration: none;
+  
+  &:hover {
+    text-decoration: underline;
+  }
+}
