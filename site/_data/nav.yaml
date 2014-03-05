@@ -1,0 +1,38 @@
+- title: Brand
+  hero:
+    heading: Brand Guidelines
+    subtitle: Nullam id dolor id nibh ultricies vehicula ut id elit.
+  docs:
+    - brand
+
+- title: Content
+  hero:
+    heading: Content Style Guide
+    subtitle: Lorem
+  docs:
+    - content
+    - voice
+    - seo
+    - grammar
+    - terms-to-avoid
+
+- title: Visual
+  hero:
+    heading: Visual Style Guide
+    subtitle: Lorem
+  docs:
+    - visual
+    - colors
+    - grid
+    - typography
+    - imagery
+    - ui-elements
+    - notifications
+
+- title: Patterns
+  hero:
+    heading: Pattern Library
+    subtitle: Lorem
+  docs:
+    - patterns
+    - buttons
