@@ -2,36 +2,46 @@
 
 .tabs-vertical {
   margin: 0;
-  padding: 3em 0 8em;
+  padding: 3em 0;
   list-style: none;
   border-right: 1px solid #d3d3d3;
-}
-.tabs-vertical li a {
-  display: block;
-  font-size: 0.8em;
-  font-weight: 400;
-  text-transform: uppercase;
-  text-indent: 500em;
-  padding: 0.7em 0;
-  margin-bottom: 0.1em;
-  margin-left: -500em;
-}
-.tabs-vertical li a:hover {
-  background: #eee;
-  text-decoration: none;
-}
-.tabs-vertical li.active a {
-  background-color: #c40022;
-  color: #fff;
-}
-.tabs-vertical li.active a:after {
-  content: ' ';
-  border-left: 0.7em solid #c40022;
-  border-top: 0.7em solid transparent;
-  border-bottom: 0.7em solid transparent;
-  width: 0;
-  height: 0;
-  left: 0.5em;
-  position: relative;
-  float: right;
+
+  li {
+
+    a {
+      display: block;
+      font-size: 0.8em;
+      font-weight: 400;
+      text-transform: uppercase;
+      text-indent: 50em;
+      padding: 0.7em 0;
+      margin-bottom: 0.1em;
+      margin-left: -50em;
+
+      &:hover {
+        background: #eee;
+        text-decoration: none;
+      }
+    }
+
+    &.active {
+
+      a {
+        background-color: #c40022;
+        color: #fff;
+
+        &:after {
+          content: ' ';
+          border-left: 0.7em solid #c40022;
+          border-top: 0.7em solid transparent;
+          border-bottom: 0.7em solid transparent;
+          width: 0;
+          height: 0;
+          left: 0.5em;
+          position: relative;
+          float: right;
+        }
+      }
+    }
+  }
 }

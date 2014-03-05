@@ -1,0 +1,31 @@
+/* GRID.SCSS */
+
+$column: 80px;
+$gutter: 0px;
+$grid-columns: 12;
+$max-width: 960px;
+
+.grid-container {
+  @include outer-container;
+}
+
+.grid-row {
+  @include outer-container;
+  margin-bottom: 1em;
+}
+
+@for $i from 1 to $grid-columns + 1 {
+  .grid-#{$i} {
+    @include span-columns($i);
+  }
+}
+
+@for $i from 1 to $grid-columns {
+  .grid-push-#{$i} {
+    @include shift($i);
+  }
+}
+
+.grid-right {
+  text-align: right;
+}

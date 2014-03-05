@@ -4,14 +4,15 @@
   text-align: center;
   background: #f6f6f6;
   padding: 3em 0;
-}
-.hero h1 {
-  font-family: 'Roboto Slab';
-  margin: 0;
-}
-.hero p {
-  font-family: 'Roboto Slab';
-  font-size: 1.2em;
-  margin: 0.4em 0;
-  color: #888;
+
+  .hero-heading {
+    font-family: 'Roboto Slab';
+    margin: 0;
+  }
+  .hero-subtitle {
+    font-family: 'Roboto Slab';
+    font-size: 1.2em;
+    margin: 0.4em 0;
+    color: #888;
+  }
 }
