@@ -5,20 +5,29 @@
     <title>{{ site.name }}</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="icon" href="/img/favicon-16x16.png" sizes="16x16" type="image/png">
-    <link rel="icon" href="/img/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="{{ site.baseurl }}/img/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="{{ site.baseurl }}/img/favicon-32x32.png" sizes="32x32" type="image/png">
     <link rel="stylesheet" href="/css/cornerstone.css">
+    <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $('<ul></ul>').appendTo('#side_nav .active');
+        $('#content h2').each(function () {
+          $('<li class="active"><a href="#' + $(this).attr('id') + '">' + $(this).text() + '</a></li>').appendTo('#side_nav .active ul');
+        });
+      });
+    </script>
   </head>
   <body>
     <div class="eyebrow">
       <div class="grid-container">
         <div class="grid-3">
-          <a href="/" class="eyebrow-brand">{{ site.name }}</a>
+          <a href="{{ site.baseurl }}/" class="eyebrow-brand">{{ site.name }}</a>
         </div>
         <div class="grid-5">
           <ul class="eyebrow-nav">
             {% for sec in site.data.nav %}
-            <li><a href="{{ site.url }}/docs/{{ sec.docs | first }}/">{{ sec.title }}</a></li>
+            <li><a href="{{ site.baseurl }}/docs/{{ sec.docs | first }}/">{{ sec.title }}</a></li>
             {% endfor %}
           </ul>
         </div>
@@ -36,17 +45,17 @@
         <p class="hero-subtitle">{{ s.hero.subtitle }}</p>
       </div>
     </div>
-    <div class="content">
+    <div>
       <div class="grid-container">
-        <div class="grid-2">
+        <div id="side_nav" class="grid-2">
           <ul class="tabs-vertical">
-            {% for cat in s.docs %}{% for p in site.pages %}{% if p.url contains cat %}
-            {% if page.url == p.url %}{% assign cl = "active" %}{% endif %}
-            <li class="{{ cl }}"><a href="#">{{ p.title }}</a></li>
-            {% endif %}{% endfor %}{% endfor %}
+            {% for cat in s.docs %}{% assign cl = '' %}
+            {% if page.url contains cat %}{% assign cl = 'active' %}{% endif %}
+            <li class="{{ cl }}"><a href="{{ site.baseurl }}/docs/{{ cat }}/">{{ cat | replace: '-', ' ' }}</a></li>
+            {% endfor %}
           </ul>
         </div>
-        <div class="grid-10">
+        <div id="content" class="grid-10">
           {{ content }}
         </div>
       </div>

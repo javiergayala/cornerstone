@@ -1,14 +1,14 @@
 - title: Brand
   hero:
     heading: Brand Guidelines
-    subtitle: Nullam id dolor id nibh ultricies vehicula ut id elit.
+    subtitle: "Lorem ipsum dolor sit amet, consectetur adipisci enean vehicula in lacus quis viverrang elit."
   docs:
     - brand
 
 - title: Content
   hero:
     heading: Content Style Guide
-    subtitle: Lorem
+    subtitle: "Lorem ipsum dolor sit amet, consectetur adipisci enean vehicula in lacus quis viverrang elit."
   docs:
     - content
     - voice
@@ -16,23 +16,23 @@
     - grammar
     - terms-to-avoid
 
+- title: Patterns
+  hero:
+    heading: Pattern Library
+    subtitle: "Lorem ipsum dolor sit amet, consectetur adipisci enean vehicula in lacus quis viverrang elit."
+  docs:
+    - patterns
+    - buttons
+
 - title: Visual
   hero:
     heading: Visual Style Guide
-    subtitle: Lorem
+    subtitle: "Lorem ipsum dolor sit amet, consectetur adipisci enean vehicula in lacus quis viverrang elit."
   docs:
     - visual
-    - colors
+    - color-palette
     - grid
     - typography
     - imagery
     - ui-elements
     - notifications
-
-- title: Patterns
-  hero:
-    heading: Pattern Library
-    subtitle: Lorem
-  docs:
-    - patterns
-    - buttons
