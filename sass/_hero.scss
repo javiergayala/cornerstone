@@ -2,17 +2,18 @@
 
 .hero {
   text-align: center;
-  background: #f6f6f6;
+  background: #8f1bbe;
+  color: #fff;
   padding: 3em 0;
 
   .hero-heading {
-    font-family: 'Roboto Slab';
     margin: 0;
   }
   .hero-subtitle {
-    font-family: 'Roboto Slab';
+    font-family: 'Source Sans Pro', sans-serif;
     font-size: 1.2em;
+    font-weight: 200;
+    line-height: 1.4em;
     margin: 0.4em 0;
-    color: #888;
   }
 }
