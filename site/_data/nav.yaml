@@ -8,31 +8,36 @@
 - title: Content
   hero:
     heading: Content Style Guide
-    subtitle: Lorem
+    subtitle: Nullam id dolor id nibh ultricies vehicula ut id elit.
   docs:
     - content
-    - voice
-    - seo
     - grammar
-    - terms-to-avoid
-
-- title: Visual
-  hero:
-    heading: Visual Style Guide
-    subtitle: Lorem
-  docs:
-    - visual
-    - colors
-    - grid
-    - typography
-    - imagery
-    - ui-elements
-    - notifications
+    - seo
+    - terms
+    - voice
 
 - title: Patterns
   hero:
     heading: Pattern Library
-    subtitle: Lorem
+    subtitle: Nullam id dolor id nibh ultricies vehicula ut id elit.
   docs:
-    - patterns
     - buttons
+    - feedback
+    - navigation
+    - organization
+    - search
+    - user-inputs
+    - windows
+
+- title: Visual
+  hero:
+    heading: Visual Style Guide
+    subtitle: Nullam id dolor id nibh ultricies vehicula ut id elit.
+  docs:
+    - colors
+    - grid
+    - imagery
+    - notifications
+    - typography
+    - ui-elements
+    - visual

@@ -1,0 +1,13 @@
+{
+  "name": "cornerstone",
+  "version": "0.1.0",
+  "description": "http://rackerlabs.github.io/cornerstone/",
+  "scripts": {
+    "test": "gulp test"
+  },
+  "devDependencies": {
+    "gulp": "~3.5.0",
+    "gulp-sass": "~0.7.0"
+  },
+  "license": "Apache-2.0"
+}

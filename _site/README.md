@@ -33,7 +33,7 @@ http://rackerlabs.github.io/cornerstone/css/tooltips.css
 4. Build SASS files using gulp.js - `gulp sass`
 5. Build branch files using jekyll - `jekyll build`
 6. Move to site directory - `cd site`
-7. Serve site via jekyll - `jekyll serve --watch`
+7. Serve site via jekyll - `jekyll serve`
 
 ## Updating Content
 

@@ -1,4 +1,4 @@
 ---
 layout: default
-title: Patterns
+title: Terms to Avoid
 ---

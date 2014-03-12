@@ -1,0 +1,315 @@
+/* CORNERSTONE */
+/* fonts */
+@import url('http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700');
+@import url('http://fonts.googleapis.com/css?family=Roboto+Slab');
+/* external dependencies */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* base */
+/* BASE.SCSS */
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+  margin: 0; }
+
+h1 {
+  font-size: 4em;
+  font-weight: 400; }
+
+h2 {
+  font-size: 2em;
+  font-weight: 400; }
+
+h3 {
+  font-size: 1.3em;
+  font-weight: 400; }
+
+h4 {
+  font-weight: 400; }
+
+h5 {
+  font-weight: 400; }
+
+h6 {
+  font-weight: 400; }
+
+p {
+  font-size: 1em;
+  font-weight: 300;
+  line-height: 1.4em; }
+
+li {
+  font-weight: 300; }
+
+strong {
+  font-weight: 400; }
+
+a {
+  color: #c40022;
+  text-decoration: none; }
+  a:hover {
+    text-decoration: underline; }
+
+/* grid */
+/* GRID.SCSS */
+.grid-container {
+  *zoom: 1;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto; }
+  .grid-container:before, .grid-container:after {
+    content: " ";
+    display: table; }
+  .grid-container:after {
+    clear: both; }
+
+.grid-row {
+  *zoom: 1;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1em; }
+  .grid-row:before, .grid-row:after {
+    content: " ";
+    display: table; }
+  .grid-row:after {
+    clear: both; }
+
+.grid-1 {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 6.17215%; }
+  .grid-1:last-child {
+    margin-right: 0; }
+
+.grid-2 {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 14.70196%; }
+  .grid-2:last-child {
+    margin-right: 0; }
+
+.grid-3 {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%; }
+  .grid-3:last-child {
+    margin-right: 0; }
+
+.grid-4 {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%; }
+  .grid-4:last-child {
+    margin-right: 0; }
+
+.grid-5 {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 40.29137%; }
+  .grid-5:last-child {
+    margin-right: 0; }
+
+.grid-6 {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%; }
+  .grid-6:last-child {
+    margin-right: 0; }
+
+.grid-7 {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 57.35098%; }
+  .grid-7:last-child {
+    margin-right: 0; }
+
+.grid-8 {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 65.88078%; }
+  .grid-8:last-child {
+    margin-right: 0; }
+
+.grid-9 {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 74.41059%; }
+  .grid-9:last-child {
+    margin-right: 0; }
+
+.grid-10 {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 82.94039%; }
+  .grid-10:last-child {
+    margin-right: 0; }
+
+.grid-11 {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 91.4702%; }
+  .grid-11:last-child {
+    margin-right: 0; }
+
+.grid-12 {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%; }
+  .grid-12:last-child {
+    margin-right: 0; }
+
+.grid-push-1 {
+  margin-left: 8.5298%; }
+
+.grid-push-2 {
+  margin-left: 17.05961%; }
+
+.grid-push-3 {
+  margin-left: 25.58941%; }
+
+.grid-push-4 {
+  margin-left: 34.11922%; }
+
+.grid-push-5 {
+  margin-left: 42.64902%; }
+
+.grid-push-6 {
+  margin-left: 51.17883%; }
+
+.grid-push-7 {
+  margin-left: 59.70863%; }
+
+.grid-push-8 {
+  margin-left: 68.23843%; }
+
+.grid-push-9 {
+  margin-left: 76.76824%; }
+
+.grid-push-10 {
+  margin-left: 85.29804%; }
+
+.grid-push-11 {
+  margin-left: 93.82785%; }
+
+.grid-right {
+  text-align: right; }
+
+/* modules */
+/* eyebrow */
+.eyebrow {
+  background: #333;
+  color: #fafafa;
+  padding: 0.4em 0; }
+  .eyebrow a {
+    color: #fafafa; }
+    .eyebrow a.eyebrow-brand {
+      font-size: 1.8em;
+      font-weight: 700;
+      letter-spacing: -0.02em; }
+      .eyebrow a.eyebrow-brand:hover {
+        text-decoration: none; }
+  .eyebrow .eyebrow-nav {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+    .eyebrow .eyebrow-nav li {
+      font-family: 'Roboto Slab';
+      display: inline-block; }
+      .eyebrow .eyebrow-nav li a {
+        display: block;
+        margin-top: 0.85em;
+        margin-right: 1.2em;
+        font-size: 0.8em;
+        text-transform: uppercase; }
+        .eyebrow .eyebrow-nav li a.btn {
+          margin-top: 0.5em;
+          font-size: 0.7em;
+          color: #fff;
+          padding: 0.5em 0;
+          width: 7em; }
+          .eyebrow .eyebrow-nav li a.btn.btn-secondary {
+            box-shadow: 0 0 0 1px #aaa inset; }
+
+/* HERO.SCSS */
+.hero {
+  text-align: center;
+  background: #f6f6f6;
+  padding: 3em 0; }
+  .hero .hero-heading {
+    font-family: 'Roboto Slab';
+    margin: 0; }
+  .hero .hero-subtitle {
+    font-family: 'Roboto Slab';
+    font-size: 1.2em;
+    margin: 0.4em 0;
+    color: #888; }
+
+/* themes */
+/* BUTTONS.SCSS */
+.btn {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+  text-transform: capitalize;
+  letter-spacing: 0.1em;
+  display: inline-block; }
+  .btn.btn-primary {
+    color: #fff;
+    background: #c40022; }
+    .btn.btn-primary:hover {
+      text-decoration: none;
+      background: #dd2233; }
+  .btn.btn-secondary {
+    color: #c40022;
+    box-shadow: 0 0 0 1px #1c1c1c inset; }
+    .btn.btn-secondary:hover {
+      text-decoration: none; }
+
+/* TABS.SCSS */
+.tabs-vertical {
+  margin: 0;
+  padding: 3em 0;
+  list-style: none;
+  border-right: 1px solid #d3d3d3; }
+  .tabs-vertical li a {
+    display: block;
+    font-size: 0.8em;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-indent: 50em;
+    padding: 0.7em 0;
+    margin-bottom: 0.1em;
+    margin-left: -50em; }
+    .tabs-vertical li a:hover {
+      background: #eee;
+      text-decoration: none; }
+  .tabs-vertical li.active a {
+    background-color: #c40022;
+    color: #fff; }
+    .tabs-vertical li.active a:after {
+      content: ' ';
+      border-left: 0.7em solid #c40022;
+      border-top: 0.7em solid transparent;
+      border-bottom: 0.7em solid transparent;
+      width: 0;
+      height: 0;
+      left: 0.5em;
+      position: relative;
+      float: right; }

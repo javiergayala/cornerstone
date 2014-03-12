@@ -25,7 +25,7 @@
         <div class="grid-4 grid-right">
           <ul class="eyebrow-nav">
             <li><a href="#" class="btn btn-eyebrow-nav btn-secondary">Contact</a></li>
-            <li><a href="#" class="btn btn-eyebrow-nav btn-primary">GitHub</a></li>
+            <li><a href="https://github.com/troyswanson/cornerstone/tree/vermeer" class="btn btn-eyebrow-nav btn-primary">GitHub</a></li>
           </ul>
         </div>
       </div>
@@ -42,7 +42,7 @@
           <ul class="tabs-vertical">
             {% for cat in s.docs %}{% for p in site.pages %}{% if p.url contains cat %}
             {% if page.url == p.url %}{% assign cl = "active" %}{% endif %}
-            <li class="{{ cl }}"><a href="#">{{ p.title }}</a></li>
+            <li class="{{ cl }}"><a href="{{ p.url }}">{{ p.title }}</a></li>
             {% endif %}{% endfor %}{% endfor %}
           </ul>
         </div>
